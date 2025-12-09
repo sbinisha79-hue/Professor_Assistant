@@ -1,0 +1,5 @@
+What is the output of print(2+3*2)?|5|6|8|B
+Which keyword is used to define a function in Python?|function|def|method|B
+Which data type is used for True/False in Python?|int|bool|str|B
+What symbol is used to comment in Python?|#|//|<!-->|A
+Which loop runs until a condition is false?|for|while|repeat|B
