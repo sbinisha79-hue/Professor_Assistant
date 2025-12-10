@@ -1,4 +1,4 @@
-# 🧑‍🏫 Professor Assistant — Python Exam Generator
+#  Professor Assistant — Python Exam Generator
 
 A Python program that helps professors generate random exams from a question bank file.
 
