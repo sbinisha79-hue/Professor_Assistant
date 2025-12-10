@@ -1,14 +1,12 @@
 import random
 
-print("Welcome to professor assistant version 1.0.")
-
-# Step 1: Ask professor name
+print("Welcome to professor assistant version 
 professor_name = input("Please Enter Your Name: ")
 print(f"Hello Professor {professor_name}, I am here to help you create exams from a question bank.")
 
 while True:
 
-    # Step 2: Ask if professor wants to create exam
+    
     choice = input("Do you want me to help you create an exam (Yes to proceed | No to quit the program)? ").strip().lower()
 
     if choice == "no":
@@ -16,7 +14,7 @@ while True:
         break
 
     elif choice == "yes":
-        # Step 3: Ask for question bank file
+        
         path = input("Please Enter the Path to the Question Bank: ")
 
         try:
@@ -27,13 +25,13 @@ while True:
             # Extract question-answer pairs
             qa_pairs = [(data[i], data[i+1]) for i in range(0, len(data), 2)]
 
-            # Step 4: Number of questions
+            
             num = int(input("How many question-answer pairs do you want to include in your exam? "))
             if num > len(qa_pairs):
                 print("❌ Not enough questions in the question bank! Try again.")
                 continue
 
-            # Step 5: Save file
+            
             save_file = input("Where do you want to save your exam? ")
 
             selected = random.sample(qa_pairs, num)
