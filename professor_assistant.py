@@ -28,7 +28,7 @@ while True:
             
             num = int(input("How many question-answer pairs do you want to include in your exam? "))
             if num > len(qa_pairs):
-                print("❌ Not enough questions in the question bank! Try again.")
+                print(" Not enough questions in the question bank! Try again.")
                 continue
 
             
@@ -41,10 +41,10 @@ while True:
                     output.write(q + "\n")
                     output.write(a + "\n\n")
 
-            print(f"🎉 Congratulations Professor {professor_name}. Your exam is created and saved in {save_file}.")
+            print(f" Congratulations Professor {professor_name}. Your exam is created and saved in {save_file}.")
 
         except FileNotFoundError:
-            print("❌ Error: The file path is invalid. Please try again.")
+            print(" Error: The file path is invalid. Please try again.")
 
     else:
         print("Invalid input, please enter Yes or No.")
